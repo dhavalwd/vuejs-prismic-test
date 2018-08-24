@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import NotFound from '@/components/NotFound'
 import Preview from '@/components/Preview'
 import Tutorial from '@/components/Tutorial'
+import Page from '@/components/Page'
 
 Vue.use(Router)
 
@@ -31,6 +32,11 @@ const router = new Router({
     {
       path: '*',
       redirect: { name: 'not-found' }
+    },
+    {
+      path: '/page/page-1',
+      name: 'page',
+      component: Page
     }
   ]
 })
